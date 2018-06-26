@@ -1,0 +1,36 @@
+{
+    "comments": {
+        // symbol used for single line comment. Remove this entry if your language does not support line comments
+        "lineComment": "//"
+    },
+    // symbols used as brackets
+    "brackets": [
+        ["IF", "ENDIF"],
+        ["SUB", "ENDSUB"],
+        ["FUNCTION", "ENDFUNC 1"],
+        ["WHILE", "ENDWHILE"],
+        ["FOR", "NEXT"]
+    ],
+    // symbols that are auto closed when typing
+    // uncomment if you want the other closing pairs
+    // as well, I found them to be a bit of a pain
+    "autoClosingPairs": [
+        //["IF", "ENDIF"],
+        //["SUB", "ENDSUB"],
+        //["FUNCTION", "ENDFUNC 1"],
+        //["FOR", "NEXT"],
+        //["WHILE", "ENDWHILE"],
+        ["'", "'"],
+        ["\"", "\""]
+    ],
+    // symbols that that can be used to surround a selection
+    "surroundingPairs": [
+        ["IF", "ENDIF"],
+        ["SUB", "ENDSUB"],
+        ["FUNCTION", "ENDFUNC 1"],
+        ["FOR", "NEXT"],
+        ["WHILE", "ENDWHILE"],
+        ["'", "'"],
+        ["\"", "\""]
+    ]
+}

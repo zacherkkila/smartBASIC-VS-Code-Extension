@@ -1,0 +1,180 @@
+{
+	"name": "SmartBasic",
+	"comment": "Modified from visual basic extension here https://github.com/Microsoft/vscode/blob/master/extensions/vb/syntaxes/asp-vb-net.tmlanguage.json using snippets from multiple languages in the repo",
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"patterns": [
+		{
+			"match": "(?i:(#define))",
+			"name": "keyword.control.directive.define.smartbasic"
+		},
+		{
+			"begin": "^(?=\\t)",
+			"end": "(?=[^\\t])",
+			"name": "meta.leading-space",
+			"patterns": [
+				{
+					"captures": {
+						"1": {
+							"name": "meta.odd-tab.tabs"
+						},
+						"2": {
+							"name": "meta.even-tab.tabs"
+						}
+					},
+					"match": "(\\t)(\\t)?"
+				}
+			]
+		},
+		{
+			"begin": "^(?= )",
+			"end": "(?=[^ ])",
+			"name": "meta.leading-space",
+			"patterns": [
+				{
+					"captures": {
+						"1": {
+							"name": "meta.odd-tab.spaces"
+						},
+						"2": {
+							"name": "meta.even-tab.spaces"
+						}
+					},
+					"match": "(  )(  )?"
+				}
+			]
+		},
+		{
+			"captures": {
+				"1": {
+					"name": "storage.type.function.smartbasic"
+				},
+				"2": {
+					"name": "entity.name.function.smartbasic"
+				},
+				"3": {
+					"name": "punctuation.definition.parameters.smartbasic"
+				},
+				"4": {
+					"name": "variable.parameter.function.smartbasic"
+				},
+				"5": {
+					"name": "punctuation.definition.parameters.smartbasic"
+				}
+			},
+			"match": "^\\s*((?i:function|sub))\\s*([a-zA-Z_]\\w*)\\s*(\\()([^)]*)(\\)).*\\n?",
+			"name": "meta.function.smartbasic"
+		},
+		{
+			"begin": "(^[ \\t]+)?(?=//)",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.whitespace.comment.leading.smartbasic"
+				}
+			},
+			"end": "(?!\\G)",
+			"patterns": [
+				{
+					"begin": "//",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.smartbasic"
+						}
+					},
+					"end": "\\n",
+					"name": "comment.line.doubleslash.smartbasic"
+				}
+			]
+		},
+		{
+			"match": "(?i:\\b(If|ENDIF|Then|Else|ElseIf|Else If|End If|While|Wend|For|To|Each|Case|Select|End Select|Return|Continue|Do|Until|Loop|Next|With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub|IIf)\\b)",
+			"name": "keyword.control.smartbasic"
+		},
+		{
+			"match": "(?i:\\b(Mod|And|Not|Or|Xor|as)\\b)",
+			"name": "keyword.operator.smartbasic"
+		},
+		{
+			"captures": {
+				"1": {
+					"name": "storage.type.smartbasic"
+				},
+				"2": {
+					"name": "variable.other.bfeac.smartbasic"
+				},
+				"3": {
+					"name": "meta.separator.comma.smartbasic"
+				}
+			},
+			"match": "(?i:(dim)\\s*(?:(\\b[a-zA-Z_x7f-xff][a-zA-Z0-9_x7f-xff]*?\\b)\\s*(,?)))",
+			"name": "variable.other.dim.smartbasic"
+		},
+		{
+			"match": "(?i:\\s*\\b(Dim|Function|Sub|EndSub|EndFunc|Let)\\b\\s*)",
+			"name": "storage.type.smartbasic"
+		},
+		{
+			"match": "(?i:\\b(Private|Public|Default)\\b)",
+			"name": "storage.modifier.smartbasic"
+		},
+		{
+			"match": "(?i:\\s*\\b(Empty|False|Nothing|Null|True)\\b)",
+			"name": "constant.language.smartbasic"
+		},
+		{
+			"begin": "\"",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.smartbasic"
+				}
+			},
+			"end": "\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.smartbasic"
+				}
+			},
+			"name": "string.quoted.double.smartbasic",
+			"patterns": [
+				{
+					"match": "\"\"",
+					"name": "constant.character.escape.apostrophe.smartbasic"
+				}
+			]
+		},
+		{
+			"match": "(?i:(?<=as )(\\b[a-zA-Z_x7f-xff][a-zA-Z0-9_x7f-xff]*?\\b))",
+			"name": "support.type.vb.smartbasic"
+		},
+		{
+			"match": "(?i:\\b(Array|Add|Asc|Atn|CBool|CByte|CCur|CDate|CDbl|Chr|CInt|CLng|Conversions|Cos|CreateObject|CSng|CStr|Date|DateAdd|DateDiff|DatePart|DateSerial|DateValue|Day|Derived|Math|Escape|Eval|Exists|Exp|Filter|FormatCurrency|FormatDateTime|FormatNumber|FormatPercent|GetLocale|GetObject|GetRef|Hex|Hour|InputBox|InStr|InStrRev|Int|Fix|IsArray|IsDate|IsEmpty|IsNull|IsNumeric|IsObject|Item|Items|Join|Keys|LBound|LCase|Left|Len|LoadPicture|Log|LTrim|RTrim|Trim|Maths|Mid|Minute|Month|MonthName|MsgBox|Now|Oct|Remove|RemoveAll|Replace|RGB|Right|Rnd|Round|ScriptEngine|ScriptEngineBuildVersion|ScriptEngineMajorVersion|ScriptEngineMinorVersion|Second|SetLocale|Sgn|Sin|Space|Split|Sqr|StrComp|String|StrReverse|Tan|Time|Timer|TimeSerial|TimeValue|TypeName|UBound|UCase|Unescape|VarType|Weekday|WeekdayName|Year)\\b)",
+			"name": "support.function.vb.smartbasic"
+		},
+		{
+			"match": "-?\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f)?\\b",
+			"name": "constant.numeric.smartbasic"
+		},
+		{
+			"captures": {
+				"1": {
+					"name": "entity.name.function.smartbasic"
+				}
+			},
+			"match": "(?i:(\\b[a-zA-Z_x7f-xff][a-zA-Z0-9_x7f-xff]*?\\b)(?=\\(\\)?))",
+			"name": "support.function.smartbasic"
+		},
+		{
+			"match": "(?i:\\b(PRINT|SPRINT)\\b)",
+			"name": "support.function.smartbasic"
+		},
+		{
+			"match": "(?i:((?<=(\\+|=|-|\\&|\\\\|/|<|>|\\(|,))\\s*\\b([a-zA-Z_x7f-xff][a-zA-Z0-9_x7f-xff]*?)\\b(?!(\\(|\\.))|\\b([a-zA-Z_x7f-xff][a-zA-Z0-9_x7f-xff]*?)\\b(?=\\s*(\\+|=|-|\\&|\\\\|/|<|>|\\(|\\)))))",
+			"name": "variable.other.smartbasic"
+		},
+		{
+			"match": "!|\\%|&|\\*|\\-\\-|\\-|\\+\\+|\\+|~|===|==|=|!=|!==|<=|>=|<<=|>>=|>>>=|<>|<|>|!|&&|\\|\\||\\?\\:|\\*=|/=|%=|\\+=|\\-=|&=|\\^=|\\b(in|instanceof|new|delete|typeof|void)\\b",
+			"name": "keyword.operator.js"
+		}
+	],
+	"repository": {},
+	"scopeName": "source.sb"
+}
