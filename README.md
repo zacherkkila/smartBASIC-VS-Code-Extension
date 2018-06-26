@@ -2,6 +2,8 @@
 
 This is a syntax highlighting extension for the Laird<sup>TM</sup> smartBASIC Lanugage. Based largely on the default VB extension here - https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json
 
+It is most certainly a work in progress but this should cover most of the basics
+
 ## Installation
 
 1. [Download the latest release](https://github.com/zacherkkila/smartBASIC-VS-Code-Extension/releases/latest)
