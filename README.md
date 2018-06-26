@@ -17,6 +17,8 @@ It is most certainly a work in progress but this should cover most of the basics
 3. Restart VS Code
 
    `CMD/CTRL+SHIFT+P` -> `Reload Window`
+   
+### If syntax highlighting doesn't happen automatically after restarting you may need to set the language mode for the file
 
 4. Change language mode for `.sb` files
 
