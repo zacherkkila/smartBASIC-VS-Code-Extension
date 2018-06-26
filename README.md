@@ -4,22 +4,23 @@ This is a syntax highlighting extension for the Laird<sup>TM</sup> smartBASIC La
 
 ## Installation
 
-Download the latest release here
+1. [/releases/latest](Download the latest release)
 
-Extract files and move folder to the following directory
+2. Extract files and move folder to the following directory
 
-Windows: `%USERPROFILE%\.vscode\extensions`
-macOS/Linux: `$HOME/.vscode/extensions`
+ Windows: `%USERPROFILE%\.vscode\extensions`
+ 
+ macOS/Linux: `$HOME/.vscode/extensions`
 
-Restart VS Code
+3. Restart VS Code
 
-`CMD/CTRL+SHIFT+P` -> `Reload Window`
+ `CMD/CTRL+SHIFT+P` -> `Reload Window`
 
-Change language mode for `.sb` files
+4. Change language mode for `.sb` files
 
-https://code.visualstudio.com/docs/languages/overview#_changing-the-language-for-the-selected-file
+ https://code.visualstudio.com/docs/languages/overview#_changing-the-language-for-the-selected-file
 
-Choose `smartBASIC` from the language list
+5. Choose `smartBASIC` from the language list
 
 ## Known Issues
 
