@@ -4,7 +4,7 @@ This is a syntax highlighting extension for the Laird<sup>TM</sup> smartBASIC La
 
 ## Installation
 
-1. [https://github.com/zacherkkila/smartBASIC-VS-Code-Extension/releases/latest](Download the latest release)
+1. [Download the latest release](https://github.com/zacherkkila/smartBASIC-VS-Code-Extension/releases/latest)
 
 2. Extract files and move folder to the following directory
 
