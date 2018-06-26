@@ -1,6 +1,6 @@
 {
-    "name": "smartbasic-language",
-    "displayName": "smartBASIC Language",
+    "name": "smartbasic-extension",
+    "displayName": "smartBASIC Extension",
     "description": "Support for the Laird smartBASIC Language",
     "version": "0.0.1",
     "publisher": "zacherkkila",
