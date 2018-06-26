@@ -8,17 +8,17 @@ This is a syntax highlighting extension for the Laird<sup>TM</sup> smartBASIC La
 
 2. Extract files and move folder to the following directory
 
- Windows: `%USERPROFILE%\.vscode\extensions`
+    Windows: `%USERPROFILE%\.vscode\extensions`
  
- macOS/Linux: `$HOME/.vscode/extensions`
+    macOS/Linux: `$HOME/.vscode/extensions`
 
 3. Restart VS Code
 
- `CMD/CTRL+SHIFT+P` -> `Reload Window`
+   `CMD/CTRL+SHIFT+P` -> `Reload Window`
 
 4. Change language mode for `.sb` files
 
- https://code.visualstudio.com/docs/languages/overview#_changing-the-language-for-the-selected-file
+   https://code.visualstudio.com/docs/languages/overview#_changing-the-language-for-the-selected-file
 
 5. Choose `smartBASIC` from the language list
 
