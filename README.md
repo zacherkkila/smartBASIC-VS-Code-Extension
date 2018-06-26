@@ -1,6 +1,6 @@
 # smartBASIC VS Code Extension
 
-This is a syntax highlighting extension for the Laird<sup>TM</sup> smartBASIC Lanugage. Based largely on the default VB extension here - https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json
+This is a syntax highlighting extension for the Laird<sup>TM</sup> smartBASIC Lanugage. Based largely on the default VB extension here - https://github.com/Microsoft/vscode/tree/master/extensions/vb
 
 It is most certainly a work in progress but this should cover most of the basics
 
