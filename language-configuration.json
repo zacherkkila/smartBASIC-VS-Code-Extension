@@ -9,7 +9,8 @@
         ["SUB", "ENDSUB"],
         ["FUNCTION", "ENDFUNC 1"],
         ["WHILE", "ENDWHILE"],
-        ["FOR", "NEXT"]
+        ["FOR", "NEXT"],
+        ["SELECT", "ENDSELECT"],
     ],
     // symbols that are auto closed when typing
     // uncomment if you want the other closing pairs
@@ -20,6 +21,7 @@
         //["FUNCTION", "ENDFUNC 1"],
         //["FOR", "NEXT"],
         //["WHILE", "ENDWHILE"],
+        //["SELECT", "ENDSELECT"],
         ["'", "'"],
         ["\"", "\""]
     ],
@@ -30,6 +32,7 @@
         ["FUNCTION", "ENDFUNC 1"],
         ["FOR", "NEXT"],
         ["WHILE", "ENDWHILE"],
+        ["SELECT", "ENDSELECT"],
         ["'", "'"],
         ["\"", "\""]
     ]
